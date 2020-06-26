@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;    
+}
+
+
+body{
+    font-family: Tahoma, sans-serif;
+    background: #555;
+    color: #fff;
+}
+
+
+/* Global Styles */
+.wrapper{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height:660px;
+    background: #103541;
+    margin: auto;
+    margin-top: 30px;
+    padding: 100px 50px;
+    border-radius: 5%;
+    transition: all .8s ease;    
+}
+
+.form-group .signin-form,
+.form-group .signup-form{
+	transform: rotateY(90deg);
+	backface-visibility: hidden;
+    transition: all .5s linear;
+}
+
+.form-group .signup-form{
+    position: absolute;
+	top: 126px;
+	left: 50px;
+    right: 50px;
+}
+
+
+
+
+/* ========================================================================= */
+/* Disable all the inputs with the type of radio and checkbox */
+.sign-in, .sign-up, #check{
+    display: none;
+}
+
+.tab{
+    color:#6a6f8c;
+    font-size: 22px;
+    margin-right:15px;
+    cursor: pointer;
+    display: inline-block;  
+    border-bottom:2px solid transparent; 
+}
+
+.sign-in:checked + .tab,
+.sign-up:checked + .tab{
+    color: #fff;
+    border-color:#1161ee;
+}
+
+
+/* Styles for all the label */
+.label{
+    display: block;
+    color: #aaa;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+/* Styles for all the input */
+.input{
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 3px;
+    border-radius: 20px;
+    background: #ffffff1a;
+    border: none;
+    color: #fff;
+}
+
+/* Styles for the Buttons */
+.btn{
+    width: 100%;
+    background: #0953d383;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+    margin-top: 15px; 
+}
+
+.btn:hover{
+    background: #0953d3fd;
+    transition: all .3s ease-in;
+}
+
+/* Styles for the hr */
+hr{
+    margin-top: 50px;
+    border: 1px solid #ffffff0c;
+}
+/* ================================================================ */
+
+/* Sign In Styles */
+.form-group .signin-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+
+.signin-form .option label .icon{
+    margin-top: 20px;
+	width: 15px;
+	height: 15px;
+	border-radius: 3px;
+	position: relative;
+	display: inline-block;
+    background:#ffffff1a;
+    cursor: pointer;
+}
+
+.signin-form .option label .icon:before,
+.signin-form .option label .icon:after{
+	content:'';
+	width: 10px;
+	height: 2px;
+	background:#fff;
+	position: absolute;
+	transition: all .2s ease-in-out 0s;
+}
+
+.signin-form .option label .icon:before{
+	left: 3px;
+	width: 4px;
+	bottom: 6px;
+	transform:scale(0) rotate(0);
+}
+
+.signin-form .option label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+
+.signin-form .option label{
+    color:#ffffff1a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.signin-form #check:checked + label{
+	color:#fff;
+}
+
+.signin-form #check:checked + label .icon{
+	background:rgb(17, 97, 238);
+}
+
+.signin-form #check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+
+.signin-form #check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+
+
+.signin-form .reset{
+    color: #aaa;
+    text-decoration: none;
+    text-align: center;
+    font-size:18px;
+    display: block;
+    margin-top: 50px;
+}
+
+.signin-form .reset:hover{
+    text-decoration: underline;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+/* ================================================================ */
+
+/* Sign Up Styles */
+.signup-form .redirect{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa; 
+}
+
+.signup-form .go-back{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.signup-form .go-back:hover{
+    text-decoration: underline;
+    color: #0000ff;
+}
+/* ========================================================================= */
+
+.sign-in:checked + .tab + .sign-up + .tab + .form-group .signin-form{
+	transform:rotate(0);
+}
+
+.sign-up:checked + .tab + .form-group .signup-form{
+    transform:rotate(0);
+}
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sexy Sign-In and Sign-Up Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- For Sign In Tab -->
+            <input type="radio" id="tab-1" class="sign-in" name="tab" checked>
+            <label for="tab-1" class="tab">Sign In</label>
+            
+
+            <!-- For Sign Up Tab-->
+            <input type="radio" id="tab-2" class="sign-up" name="tab">
+            <label for="tab-2" class="tab">Sign Up</label>
+            
+
+
+        <!-- Sign In Form Markup -->
+        <div class="form-group">
+            <div class="signin-form">
+                <label for="user" class="label">Username</label>
+                <input type="text" id="user" class="input">
+
+                <label for="pswd" class="label">Password</label>
+                <input type="password" id="pswd" class="input">
+                
+                <div class="option">
+                    <input type="checkbox" id="check">
+                    <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                </div>
+                <div>
+                    <a href="#" class="btn">Sign In</a>
+                    <hr>
+                    <a href="#" class="reset">Forgot Password?</a> 
+                </div>           
+            </div>
+            <!-- Sign Up Form Markup -->
+            <div class="signup-form">
+                <label for="username" class="label">Username</label>
+                <input type="text" id="username" class="input">
+
+                <label for="password" class="label">Password</label>
+                <input type="password" id="password" class="input">
+
+                <label for="confirm-password" class="label">Confirm Password</label>
+                <input type="password" id="confirm-password" class="input">
+                
+                <label for="email" class="label">Email Address</label>
+                <input type="email" id="email" class="input"> 
+
+                <a href="#" class="btn">Sign Up</a>
+                <hr>
+                <label for="tab-1" class="redirect">Already have an Account? <span class="go-back">Sign In</span></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
